@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/dist/css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Public+Sans:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <title>Food Recipe</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <h2 class="title">Find Meals For Your Ingredients</h2>
+
+        <blockquote>
+          <span class="typer" id="main" data-words="Real food doesn't have Ingredients, real food is Ingredients." data-delay="100" data-deleteDelay="1000"></span>
+          <span class="cursor" data-owner="main"></span><br />
+          <cite>- Jamie Oliver</cite>
+        </blockquote>
+
+        <div class="meal-search-box">
+          <input type="text" placeholder="Enter an Ingredient" id="search-input" class="search-control" />
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <div class="meal-result">
+        <h2 class="title">
+          Your Search Result:
+        </h2>
+        <div id="meal">
+          <!-- meal item -->
+          
+          <!-- meal item end -->
+          
+        </div>
+      </div>
+
+      <div class="meal-details" id="meal-details">
+        <!-- recipe close button-->
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- meal contnet -->
+        <div class="meal-details-content">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+</body>
+
+</html>
